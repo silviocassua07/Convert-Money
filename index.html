@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Convert Money</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Convert Money</h1>
+        </header>
+
+        <main>
+            <label for="">
+                Converter <b>de</b>
+                <select name="" id="currency-select-main">
+                    <option >KZ Angolano</option>
+                    <option > € Euro </option>
+                    <option > US$ Dólar Americano </option>
+                    <option > R$ Brasileiro</option>
+                    <option >฿ Bitcoin</option>
+                    <option >$ Peso Colombiano</option>
+                    <option>MZN Meticais Moçambicanos</option>
+                </select>
+            </label>
+
+            <label for="currency-select">
+                Converter <b>para</b>
+                <select name="" id="currency-select">
+                    <option > € Euro </option>
+                    <option > US$ Dólar Americano </option>
+                    <option > R$ Brasileiro</option>
+                    <option >฿ Bitcoin</option>
+                    <option >$ Peso Colombiano</option>
+                    <option>MZN Meticais Moçambicanos</option>
+                    <option >KZ Angolano</option>
+
+                </select>
+            </label>
+
+            <label for="">
+               Valor
+               <input id="input-currency" type="text" placeholder="KZ 1.000,00">
+            </label>
+
+            <button type="button" id="convert-button">Converter</button>
+
+            <section>
+                <div class="currency-container">
+                    <img src="./assets/img/ao.png" alt="Bandeira-Currency" id = "currency-img-convert">
+                    <p class="currency-name" id="currency-convert">Kwanza</p>
+                    <p class="currency-value" id="currency-value-text">KZ 1.000,00</p>
+                </div>
+
+                <img src="./assets/img/Vector.png" alt="seta" class="arrow-img">
+
+                <div class="currency-container">
+                    <img src="./assets/img/euro.png" alt="Bandeira-País-Conversão" id="currency-img">
+                    <p class="currency-name" id="currency-Name">Euro</p>
+                    <p class="currency-value" id="currency-value-text-converted">€ 1,00</p>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+</html>
